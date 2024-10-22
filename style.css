@@ -1,0 +1,118 @@
+:root {
+  --cool-dark: #061130;
+  --cool-blue: #1C4BC4;
+  --cool-light: #F4F6F8;
+  --cool-yellow: #FAFD61;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+html, body{
+  width: 100%;;
+  height: 100%;
+}
+body{
+  background-color: var(--cool-dark);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cool-dark);
+  padding: 5px;
+  margin: 30px;
+}
+header a{
+  text-decoration: none;
+  margin-right: 25px;
+  color: var(--cool-light);
+}
+header a:nth-child(3){
+  background-color: var(--cool-blue);
+  padding: 5px 8px;
+  border-radius: 10px;
+}
+main>section{
+  display: flex;
+  justify-content: center;
+  background-color: var(--cool-dark);
+  min-width: 100%;
+}
+article{
+  max-width: 20%;
+  margin-right: 80px;
+  color: var(--cool-light);
+}
+article p:first-child{
+  color: var(--cool-yellow);
+}
+h1{
+  font-size: 40px;
+  margin: 15px 0;
+}
+article>p{
+  line-height: 35px;
+}
+section>div{
+  max-width: 50%;
+  margin-top: 20px;
+}
+main section:nth-child(2){
+  background-color: var(--cool-light);
+  min-height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  min-width: 100%;
+}
+footer{
+  min-height: 150px;
+  color: var(--cool-light);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(0, 0%, 90%);
+  color: var(--cool-dark);
+  min-width: 100%;
+}
+footer>h2{
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+@media screen and (max-width: 768px){
+  main>section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cool-dark);
+    padding: 20px;
+    min-width: 100%;
+  }
+  article{
+    max-width: 100%;
+    /* margin-right: 80px; */
+    color: var(--cool-light);
+  }
+  section>div{
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  footer{
+    min-height: 150px;
+    color: var(--cool-light);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(0, 0%, 90%);
+    color: var(--cool-dark);
+    width: 100%;
+    margin: 0 auto;
+  }
+}
